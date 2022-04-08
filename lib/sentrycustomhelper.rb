@@ -14,7 +14,7 @@ module Sentry
             message: message
           }
         )
-        Sentry.capture_exception(exception)
+        capture_exception(exception)
       end
     end
   end
