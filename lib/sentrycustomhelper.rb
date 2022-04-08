@@ -5,7 +5,7 @@ require 'sentry/integrable'
 module Sentry
   module Helper
     extend Integrable
-    register_integration name: 'Sentry::Helper', version: '1'
+    register_integration name: 'Sentry::Helper', version: '2'
 
     def send(exception, message)
       Sentry.with_scope do |scope|
